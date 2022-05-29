@@ -435,6 +435,11 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
                 iconDrawable = ((LayerDrawable) iconDrawable).getDrawable(1);
                 iconDrawable.mutate();
             }
+            if (iconPackage.equals(WELLBEING_PACKAGE) && iconDrawable instanceof LayerDrawable
+                    && ((LayerDrawable) iconDrawable).getDrawable(1) != null) {
+                iconDrawable = ((LayerDrawable) iconDrawable).getDrawable(1);
+                iconDrawable.mutate();
+            }
             iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
         } else if (forceRoundedIcon && !TextUtils.equals(mContext.getPackageName(), iconPackage)) {
             iconDrawable = new AdaptiveIcon(mContext, iconDrawable,
