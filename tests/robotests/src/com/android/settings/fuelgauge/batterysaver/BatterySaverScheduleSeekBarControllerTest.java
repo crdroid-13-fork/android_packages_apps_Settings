@@ -68,7 +68,7 @@ public class BatterySaverScheduleSeekBarControllerTest {
 
     @Test
     public void updateSeekBar_percentageMode_hasCorrectProperties() {
-        final CharSequence expectedTitle = "10%";
+        final CharSequence expectedTitle = "20%";
         Settings.Global.putInt(mResolver, Global.AUTOMATIC_POWER_SAVE_MODE,
                 PowerManager.POWER_SAVE_MODE_TRIGGER_PERCENTAGE);
         Settings.Global.putInt(mResolver, Global.LOW_POWER_MODE_TRIGGER_LEVEL, 10);
