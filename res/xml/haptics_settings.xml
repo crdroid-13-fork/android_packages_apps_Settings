@@ -30,7 +30,7 @@
         android:defaultValue="3"
         settings:interval="1"/>
 
-    <!-- Brightness slider intensity -->
+    <!-- Brightness slider intensity
     <com.crdroid.settings.preferences.CustomSeekBarPreference
         android:key="brightness_slider_haptics_intensity"
         android:title="@string/brightness_slider_haptics_intensity_title"
@@ -38,7 +38,7 @@
         android:max="3"
         settings:min="0"
         android:defaultValue="1"
-        settings:interval="1"/>
+        settings:interval="1"/>-->
 
     <!-- Edge scrolling intensity -->
     <com.crdroid.settings.preferences.CustomSeekBarPreference
